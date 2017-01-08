@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from argparse import ArgumentParser
 from configparser import ConfigParser
 from logging import basicConfig, DEBUG, INFO, getLogger
