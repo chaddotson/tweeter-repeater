@@ -7,16 +7,16 @@ install_reqs = []
 dependency_links = []
 
 with open("requirements.txt", "r") as f:
-    temp_install_reqs = list(map(str.strip, f.readlines()))
+    install_reqs = list(map(str.strip, f.readlines()))
 
-for req in temp_install_reqs:
-    # This if should be expanded with all the other possibilities that can exist.  However, this
-    # simple version works for this program.
-    if req.startswith("https://"):
-        dependency_links.append(req)
-        install_reqs.append(req[req.find("egg=") + 4:].replace("-", "==", 1))
-    else:
-        install_reqs.append(req)
+# for req in temp_install_reqs:
+#     # This if should be expanded with all the other possibilities that can exist.  However, this
+#     # simple version works for this program.
+#     if req.startswith("https://"):
+#         dependency_links.append(req)
+#         install_reqs.append(req[req.find("egg=") + 4:].replace("-", "==", 1))
+#     else:
+#         install_reqs.append(req)
 
 setup(
     name='tweeter-repeater',

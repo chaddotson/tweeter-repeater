@@ -1,2 +1,2 @@
-https://github.com/chaddotson/pytools.git
+git+git://github.com/chaddotson/pytools@master#egg=pytools
 tweepy==3.5.0
