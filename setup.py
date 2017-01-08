@@ -30,7 +30,7 @@ setup(
     install_requires=install_reqs,
     entry_points={
         'console_scripts': [
-            'tweet-repeater = bin.main:main',
+            'tweeter-repeater = bin.main:main',
         ]
     },
 )
